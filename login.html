@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Tesla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen flex items-center justify-center p-5">
+    <div class="w-full max-w-[320px]">
+        <!-- Logo -->
+        <div class="text-center mb-8">
+            <img src="tesla-logo.svg" alt="Tesla Logo" class="w-[120px] mx-auto">
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-2xl font-medium text-center mb-8">Sign In</h1>
+
+        <!-- Form -->
+        <form>
+            <div class="mb-5">
+                <label for="email" class="block text-sm text-gray-600 mb-2">
+                    Email Address
+                </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required
+                    class="w-full px-4 py-3 border border-gray-200 rounded-md text-sm focus:border-gray-300 focus:outline-none transition-colors"
+                >
+            </div>
+
+            <div class="mb-5">
+                <label for="password" class="block text-sm text-gray-600 mb-2">
+                    Password
+                </label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required
+                    class="w-full px-4 py-3 border border-gray-200 rounded-md text-sm focus:border-gray-300 focus:outline-none transition-colors"
+                >
+            </div>
+
+            <button 
+                type="submit" 
+                class="w-full py-3 bg-[#3e6ae1] hover:bg-[#3457b1] text-white rounded-md text-sm font-medium transition-colors"
+            >
+                Sign In
+            </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="text-center text-gray-600 my-5">Or</div>
+
+        <!-- Create Account Link -->
+        <div class="text-center">
+            <a href="#" class="text-sm text-gray-600 hover:text-[#3e6ae1] transition-colors">
+                Create Account
+            </a>
+        </div>
+    </div>
+</body>
+</html>
